@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f0f7e9" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Контакты — Moxito Tour</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Moxito Tour — главная"
+        ><img
+          class="brand-logo"
+          src="assets/moxito-logo.png"
+          alt="Moxito Tour" /></a
+      ><button
+        class="menu-toggle"
+        type="button"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
+      <nav
+        class="main-nav"
+        aria-label="Основная навигация"
+        data-i18n-aria="nav.aria"
+      >
+        <a href="index.html" data-i18n="nav.home">Главная</a
+        ><a href="destinations.html" data-i18n="nav.destinations">Направления</a
+        ><a href="about.html" data-i18n="nav.about">О нас</a
+        ><a href="reviews.html" data-i18n="nav.reviews">Отзывы</a
+        ><a class="active" href="contact.html" data-i18n="nav.contact"
+          >Контакты</a
+        >
+      </nav>
+      <div class="header-actions">
+        <label class="language-picker"
+          ><span class="sr-only" data-i18n="language.label">Язык</span
+          ><select class="language-select" aria-label="Язык">
+            <option value="ru">RU</option>
+            <option value="uz">UZ</option>
+            <option value="en">EN</option>
+          </select></label
+        ><a class="header-cta" href="#trip-form" data-i18n="nav.cta"
+          >Обсудить поездку <span>↗</span></a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="inner-hero page-container">
+        <div class="breadcrumbs">
+          <a href="index.html" data-i18n="nav.home">Главная</a><span>/</span
+          ><span data-i18n="nav.contact">Контакты</span>
+        </div>
+        <div class="inner-hero-row">
+          <div>
+            <span class="eyebrow" data-i18n="contact.eyebrow"
+              >Мы уже думаем о маршруте</span
+            >
+            <h1 data-i18n="contact.title">Расскажите,<br />куда хочется.</h1>
+          </div>
+          <p class="inner-lead" data-i18n="contact.lead">
+            Никаких обязательств и автоответчиков. Только живой разговор о том,
+            что вы хотите увидеть.
+          </p>
+        </div>
+      </section>
+      <section class="contact-layout page-container">
+        <form class="contact-form reveal" id="trip-form">
+          <div class="form-intro">
+            <span class="eyebrow" data-i18n="contact.formLabel"
+              >Пара слов о поездке</span
+            >
+            <p data-i18n="contact.formIntro">
+              Оставьте контакты, а мы напишем в течение одного рабочего дня.
+            </p>
+          </div>
+          <label class="form-field"
+            ><span data-i18n="contact.nameLabel">Как к вам обращаться?</span
+            ><input
+              name="name"
+              type="text"
+              autocomplete="name"
+              required
+              placeholder="Имя"
+              data-i18n-placeholder="contact.namePlaceholder" /></label
+          ><label class="form-field"
+            ><span data-i18n="contact.emailLabel">Куда написать?</span
+            ><input
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+              placeholder="you@example.com"
+              data-i18n-placeholder="contact.emailPlaceholder" /></label
+          ><label class="form-field"
+            ><span data-i18n="contact.destinationLabel"
+              >Куда мечтаете поехать?</span
+            ><select name="destination" required>
+              <option
+                value=""
+                selected
+                disabled
+                data-i18n="contact.destinationPlaceholder"
+              >
+                Выберите направление
+              </option>
+              <option value="maldives" data-i18n="dest.maldivesTitle">
+                Мальдивы: острова и лагуны
+              </option>
+              <option value="thailand" data-i18n="dest.thailandTitle">
+                Таиланд: тропики и острова
+              </option>
+              <option value="turkey" data-i18n="dest.trTitle">
+                Стамбул: две стороны света
+              </option>
+              <option value="italy" data-i18n="dest.itTitle">
+                Итальянская ривьера без спешки
+              </option>
+              <option value="custom" data-i18n="contact.customOption">
+                Свой маршрут
+              </option>
+            </select></label
+          ><label class="form-field"
+            ><span data-i18n="contact.messageLabel"
+              >Что ещё нам знать?
+              <small data-i18n="contact.optional">необязательно</small></span
+            ><textarea
+              name="message"
+              rows="3"
+              placeholder=""
+              data-i18n-placeholder="contact.messagePlaceholder"
+            ></textarea></label
+          ><button class="button button-dark form-submit" type="submit">
+            <span data-i18n="contact.submit">Отправить запрос</span
+            ><span>↗</span>
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+        <aside class="contact-details reveal">
+          <div class="contact-detail-block">
+            <span class="eyebrow" data-i18n="contact.findUs"
+              >Загляните к нам</span
+            >
+            <address>
+              <span data-i18n="contact.address"
+                >Чиланзар, 7-й квартал, дом 33</span
+              ><br /><a
+                href="https://maps.google.com/maps?q=41.298043,69.207995&amp;ll=41.298043,69.207995&amp;z=16"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n="contact.directions"
+                >Как добраться ↗</a
+              >
+            </address>
+          </div>
+          <div class="contact-detail-block">
+            <span class="eyebrow" data-i18n="contact.writeUs"
+              >Напишите напрямую</span
+            ><a class="contact-email" href="mailto:svr1987@list.ru"
+              >svr1987@list.ru ↗</a
+            >
+            <p data-i18n="contact.replyTime">Пн–Сб · отвечаем до 18:00</p>
+          </div>
+          <div class="contact-detail-block">
+            <span class="eyebrow" data-i18n="contact.callUs">Позвоните</span
+            ><a class="contact-email" href="tel:+998951275151"
+              >+998 95 127 51 51 ↗</a
+            >
+            <p data-i18n="contact.callTime">Пн–Сб · 10:00–18:00</p>
+          </div>
+          <div class="contact-note">
+            <span aria-hidden="true">✳</span>
+            <p data-i18n="contact.note">
+              Можно написать на любом языке. Мы говорим по-русски, узбекски и
+              английски.
+            </p>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="index.html"
+        ><img
+          class="brand-logo"
+          src="assets/moxito-logo.png"
+          alt="Moxito Tour" /></a
+      ><span class="footer-copy" data-i18n="footer.copy"
+        >Путешествия, которые остаются с вами. Ташкент, 2026.</span
+      >
+      <nav class="footer-links">
+        <a href="destinations.html" data-i18n="nav.destinations">Направления</a
+        ><a href="reviews.html" data-i18n="nav.reviews">Отзывы</a
+        ><a href="contact.html" data-i18n="nav.contact">Контакты</a>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

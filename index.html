@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f0f7e9" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <meta
+      name="description"
+      content="Путешествия, после которых остаются истории. Авторские туры Moxito Tour."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Moxito Tour — путешествия со вкусом</title>
+  </head>
+  <body class="home-page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Moxito Tour — главная"
+        ><img class="brand-logo" src="assets/moxito-logo.png" alt="Moxito Tour"
+      /></a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
+      <nav
+        class="main-nav"
+        aria-label="Основная навигация"
+        data-i18n-aria="nav.aria"
+      >
+        <a class="active" href="index.html" data-i18n="nav.home">Главная</a>
+        <a href="destinations.html" data-i18n="nav.destinations">Направления</a>
+        <a href="about.html" data-i18n="nav.about">О нас</a>
+        <a href="reviews.html" data-i18n="nav.reviews">Отзывы</a>
+        <a href="contact.html" data-i18n="nav.contact">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <label class="language-picker"
+          ><span class="sr-only" data-i18n="language.label">Язык</span
+          ><select class="language-select" aria-label="Язык">
+            <option value="ru">RU</option>
+            <option value="uz">UZ</option>
+            <option value="en">EN</option>
+          </select></label
+        ><a class="header-cta" href="contact.html" data-i18n="nav.cta"
+          >Обсудить поездку <span>↗</span></a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="home-hero-carousel">
+        <div class="home-hero">
+          <div
+            class="hero-image hero-image-maldives is-active"
+            role="img"
+            aria-label="Бирюзовые лагуны Мальдив"
+          ></div>
+          <div
+            class="hero-image hero-image-thailand"
+            role="img"
+            aria-label="Острова Таиланда"
+            aria-hidden="true"
+          ></div>
+          <div
+            class="hero-image hero-image-istanbul"
+            role="img"
+            aria-label="Стамбул на закате"
+            aria-hidden="true"
+          ></div>
+          <div
+            class="hero-image hero-image-italy"
+            role="img"
+            aria-label="Побережье Италии"
+            aria-hidden="true"
+          ></div>
+          <div class="hero-content page-container">
+            <span class="eyebrow light-eyebrow" data-i18n="home.eyebrow"
+              >Туры, собранные с душой</span
+            >
+            <h1 data-i18n="home.title">Мир ближе,<br />чем кажется.</h1>
+            <p class="hero-description" data-i18n="home.description">
+              Откройте места, в которых хочется остаться. Мы продумали всё,
+              чтобы вы просто наслаждались моментом.
+            </p>
+            <a class="button button-accent" href="destinations.html"
+              ><span data-i18n="home.explore">Выбрать путешествие</span
+              ><span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="hero-bottom page-container">
+            <span data-i18n="home.location"
+              >Ташкент · путешествуем по всему миру</span
+            ><a href="#featured" data-i18n="home.scroll"
+              >Листайте, здесь вдохновение <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <span class="hero-index">01 / 04</span>
+        </div>
+      </section>
+      <section class="intro-section page-container" id="featured">
+        <div class="section-heading reveal">
+          <span class="eyebrow" data-i18n="home.featuredLabel"
+            >Мир ждёт вас</span
+          >
+          <h2 data-i18n="home.featuredTitle">
+            Немного дальше<br />привычного маршрута.
+          </h2>
+        </div>
+        <div class="intro-aside reveal">
+          <p data-i18n="home.featuredText">
+            Небольшие группы, местные проводники и маршруты, которые показывают
+            страну изнутри. Выбирайте настроение, остальное мы берём на себя.
+          </p>
+          <a class="text-link" href="destinations.html"
+            ><span data-i18n="home.allTrips">Все путешествия</span>
+            <span>↗</span></a
+          >
+        </div>
+      </section>
+      <section
+        class="destination-strip page-container"
+        aria-label="Популярные направления"
+      >
+        <a
+          class="destination-card destination-card-large reveal"
+          href="destinations.html#maldives"
+          ><img
+            src="assets/maldives.jpg"
+            alt="Бирюзовые воды и виллы на Мальдивах"
+            loading="lazy"
+          /><span class="destination-count">01 — 04</span>
+          <div class="destination-caption">
+            <span data-i18n="home.cardMaldives">Лагуны Мальдив</span
+            ><span data-i18n="home.cardMaldivesPlace">Мальдивы · 8 дней</span>
+          </div></a
+        >
+        <a
+          class="destination-card destination-card-tall reveal"
+          href="destinations.html#thailand"
+          ><img
+            src="assets/thailand.jpg"
+            alt="Лонгтейл-лодки у островов Таиланда"
+            loading="lazy"
+          /><span class="destination-count">02 — 04</span>
+          <div class="destination-caption">
+            <span data-i18n="home.cardThailand">Острова Андаманского моря</span
+            ><span data-i18n="home.cardThailandPlace">Таиланд · 8 дней</span>
+          </div></a
+        >
+        <a
+          class="destination-card destination-card-small reveal"
+          href="destinations.html#turkey"
+          ><img
+            src="assets/istanbul.jpg"
+            alt="Панорама Стамбула на закате"
+            loading="lazy"
+          /><span class="destination-count">03 — 04</span>
+          <div class="destination-caption">
+            <span data-i18n="home.cardTurkey">Город между мирами</span
+            ><span data-i18n="home.cardTurkeyPlace">Турция · 4 дня</span>
+          </div></a
+        >
+      </section>
+      <section
+        class="experience-section page-container"
+        aria-labelledby="experience-title"
+      >
+        <div class="section-heading experience-heading reveal">
+          <span class="eyebrow" data-i18n="home.experienceLabel"
+            >Вдохновение для маршрута</span
+          >
+          <h2 id="experience-title" data-i18n="home.experienceTitle">
+            Мир, который хочется увидеть.
+          </h2>
+        </div>
+        <div class="experience-gallery">
+          <a
+            class="experience-tile experience-tile-mountains reveal"
+            href="destinations.html"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1600&q=90"
+              alt="Городская архитектура"
+              loading="lazy"
+            />
+            <span class="experience-caption" data-i18n="home.experienceCity"
+              >Городские истории</span
+            >
+          </a>
+          <a
+            class="experience-tile experience-tile-winter reveal"
+            href="destinations.html"
+          >
+            <img
+              src="https://moxito-tour.uz/gallery/centre.png"
+              alt="Снежные горы и зимний курорт"
+              loading="lazy"
+            />
+            <span class="experience-caption" data-i18n="home.experienceWinter"
+              >Снежный курорт</span
+            >
+          </a>
+          <a
+            class="experience-tile experience-tile-city reveal"
+            href="destinations.html"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=90"
+              alt="Горы и горная долина"
+              loading="lazy"
+            />
+            <span
+              class="experience-caption"
+              data-i18n="home.experienceMountains"
+              >Горы</span
+            >
+          </a>
+          <a
+            class="experience-tile experience-tile-ocean reveal"
+            href="destinations.html"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=1600&q=90"
+              alt="Круизный лайнер в океане"
+              loading="lazy"
+            />
+            <span class="experience-caption" data-i18n="home.experienceOcean"
+              >Океан и лайнер</span
+            >
+          </a>
+          <a
+            class="experience-tile experience-tile-island reveal"
+            href="destinations.html"
+          >
+            <img
+              src="https://images.pexels.com/photos/37949754/pexels-photo-37949754.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              alt="Тропический остров"
+              loading="lazy"
+            />
+            <span class="experience-caption" data-i18n="home.experienceIsland"
+              >Тропический остров</span
+            >
+          </a>
+          <a
+            class="experience-tile experience-tile-cruise reveal"
+            href="destinations.html"
+          >
+            <img
+              src="https://images.pexels.com/photos/163236/luxury-yacht-boat-speed-water-163236.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              alt="Морское путешествие на лодке"
+              loading="lazy"
+            />
+            <span class="experience-caption" data-i18n="home.experienceCruise"
+              >Морское путешествие</span
+            >
+          </a>
+        </div>
+      </section>
+      <section class="home-note page-container reveal">
+        <span class="note-star" aria-hidden="true">✳</span>
+        <p data-i18n="home.note">«Лучшие сувениры не помещаются в чемодан.»</p>
+        <a class="text-link" href="about.html"
+          ><span data-i18n="home.noteLink">Узнайте, как мы путешествуем</span>
+          <span>↗</span></a
+        >
+      </section>
+      <section class="testimonial-highlight">
+        <div class="testimonial-inner page-container reveal">
+          <span class="eyebrow light-eyebrow" data-i18n="home.reviewLabel"
+            >Записки из поездки</span
+          >
+          <blockquote data-i18n="home.quote">
+            «Каждый день был продуман, но при этом оставалось место маленькому
+            чуду. Мальдивы теперь кусочек нашего сердца.»
+          </blockquote>
+          <div class="quote-credit">
+            <span class="quote-avatar">НК</span
+            ><span
+              ><strong data-i18n="home.quoteAuthor">Наталья и Кирилл</strong
+              ><small data-i18n="home.quoteTrip"
+                >Тур по Узбекистану · май 2025</small
+              ></span
+            ><a href="reviews.html" data-i18n="home.moreReviews"
+              >Все отзывы ↗</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="closing-cta page-container reveal">
+        <span class="eyebrow" data-i18n="home.ctaEyebrow"
+          >Ваша следующая история</span
+        >
+        <h2 data-i18n="home.ctaTitle">Куда вас тянет?</h2>
+        <a class="button button-dark" href="contact.html"
+          ><span data-i18n="home.ctaButton">Давайте придумаем</span
+          ><span>↗</span></a
+        >
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="index.html"
+        ><img
+          class="brand-logo"
+          src="assets/moxito-logo.png"
+          alt="Moxito Tour" /></a
+      ><span class="footer-copy" data-i18n="footer.copy"
+        >Путешествия, которые остаются с вами. Ташкент, 2026.</span
+      >
+      <nav class="footer-links">
+        <a href="destinations.html" data-i18n="nav.destinations">Направления</a
+        ><a href="reviews.html" data-i18n="nav.reviews">Отзывы</a
+        ><a href="contact.html" data-i18n="nav.contact">Контакты</a>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

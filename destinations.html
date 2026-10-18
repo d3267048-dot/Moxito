@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f0f7e9" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Направления — Moxito Tour</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Moxito Tour — главная"
+        ><img
+          class="brand-logo"
+          src="assets/moxito-logo.png"
+          alt="Moxito Tour" /></a
+      ><button
+        class="menu-toggle"
+        type="button"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
+      <nav
+        class="main-nav"
+        aria-label="Основная навигация"
+        data-i18n-aria="nav.aria"
+      >
+        <a href="index.html" data-i18n="nav.home">Главная</a
+        ><a class="active" href="destinations.html" data-i18n="nav.destinations"
+          >Направления</a
+        ><a href="about.html" data-i18n="nav.about">О нас</a
+        ><a href="reviews.html" data-i18n="nav.reviews">Отзывы</a
+        ><a href="contact.html" data-i18n="nav.contact">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <label class="language-picker"
+          ><span class="sr-only" data-i18n="language.label">Язык</span
+          ><select class="language-select" aria-label="Язык">
+            <option value="ru">RU</option>
+            <option value="uz">UZ</option>
+            <option value="en">EN</option>
+          </select></label
+        ><a class="header-cta" href="contact.html" data-i18n="nav.cta"
+          >Обсудить поездку <span>↗</span></a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="inner-hero page-container">
+        <div class="breadcrumbs">
+          <a href="index.html" data-i18n="nav.home">Главная</a><span>/</span
+          ><span data-i18n="nav.destinations">Направления</span>
+        </div>
+        <div class="inner-hero-row">
+          <div>
+            <span class="eyebrow" data-i18n="dest.eyebrow"
+              >Собирайте впечатления</span
+            >
+            <h1 data-i18n="dest.title">Мир на вашей<br />карте.</h1>
+          </div>
+          <p class="inner-lead" data-i18n="dest.lead">
+            В каждом месте есть своя история. Выберите ту, с которой начнётся
+            ваша.
+          </p>
+        </div>
+        <div class="filter-bar" role="group" aria-label="Фильтр направлений">
+          <button
+            class="filter-button is-active"
+            data-filter="all"
+            data-i18n="dest.filterAll"
+          >
+            Все места</button
+          ><button
+            class="filter-button"
+            data-filter="asia"
+            data-i18n="dest.filterAsia"
+          >
+            Азия</button
+          ><button
+            class="filter-button"
+            data-filter="europe"
+            data-i18n="dest.filterEurope"
+          >
+            Европа</button
+          ><button
+            class="filter-button"
+            data-filter="africa"
+            data-i18n="dest.filterAfrica"
+          >
+            Африка и Ближний Восток</button
+          ><span class="filter-count" data-i18n="dest.count"
+            >10 путешествий</span
+          >
+        </div>
+      </section>
+      <section
+        class="destination-grid page-container"
+        aria-label="Все направления"
+      >
+        <article
+          class="destination-listing reveal"
+          id="maldives"
+          data-category="asia"
+        >
+          <a class="listing-image" href="contact.html"
+            ><img
+              src="assets/maldives.jpg"
+              alt="Бирюзовая лагуна и виллы на Мальдивах"
+              loading="lazy"
+            /><span class="listing-number">01</span></a
+          >
+          <div class="listing-meta">
+            <span data-i18n="dest.maldivesRegion"
+              >Мальдивы · Индийский океан</span
+            ><span data-i18n="dest.maldivesDuration"
+              >8 дней · цена по запросу</span
+            >
+          </div>
+          <h2 data-i18n="dest.maldivesTitle">Мальдивы: острова и лагуны</h2>
+          <p data-i18n="dest.maldivesDesc">
+            Белоснежные пляжи, виллы над водой и рифы в прозрачных лагунах
+            Индийского океана.
+          </p>
+          <a class="text-link" href="contact.html"
+            ><span data-i18n="dest.details">Узнать подробности</span>
+            <span>↗</span></a
+          >
+        </article>
+        <article
+          class="destination-listing reveal"
+          id="thailand"
+          data-category="asia"
+        >
+          <a class="listing-image" href="contact.html"
+            ><img
+              src="assets/thailand.jpg"
+              alt="Традиционные лодки у побережья Таиланда"
+              loading="lazy"
+            /><span class="listing-number">02</span></a
+          >
+          <div class="listing-meta">
+            <span data-i18n="dest.thailandRegion">Таиланд · Азия</span
+            ><span data-i18n="dest.thailandDuration">8 дней · от $690</span>
+          </div>
+          <h2 data-i18n="dest.thailandTitle">Таиланд: тропики и острова</h2>
+          <p data-i18n="dest.thailandDesc">
+            Изумрудные бухты, длиннохвостые лодки и насыщенные вкусы южного
+            Таиланда.
+          </p>
+          <a class="text-link" href="contact.html"
+            ><span data-i18n="dest.details">Узнать подробности</span>
+            <span>↗</span></a
+          >
+        </article>
+        <article
+          class="destination-listing reveal"
+          id="turkey"
+          data-category="asia europe"
+        >
+          <a class="listing-image" href="contact.html"
+            ><img
+              src="assets/istanbul.jpg"
+              alt="Улицы Стамбула и его историческая архитектура"
+              loading="lazy"
+            /><span class="listing-number">03</span></a
+          >
+          <div class="listing-meta">
+            <span data-i18n="dest.trRegion">Турция · Европа и Азия</span
+            ><span data-i18n="dest.trDuration">4 дня · от $390</span>
+          </div>
+          <h2 data-i18n="dest.trTitle">Стамбул: две стороны света</h2>
+          <p data-i18n="dest.trDesc">
+            Паромы через Босфор, восточные ароматы и город, который каждый день
+            звучит по-новому.
+          </p>
+          <a class="text-link" href="contact.html"
+            ><span data-i18n="dest.details">Узнать подробности</span>
+            <span>↗</span></a
+          >
+        </article>
+        <article class="destination-listing reveal" data-category="europe">
+          <a class="listing-image" href="contact.html"
+            ><img
+              src="assets/italy.jpg"
+              alt="Яркие приморские городки итальянской Ривьеры"
+              loading="lazy"
+            /><span class="listing-number">04</span></a
+          >
+          <div class="listing-meta">
+            <span data-i18n="dest.itRegion">Италия · Европа</span
+            ><span data-i18n="dest.itDuration">6 дней · от $850</span>
+          </div>
+          <h2 data-i18n="dest.itTitle">Итальянская ривьера без спешки</h2>
+          <p data-i18n="dest.itDesc">
+            Пастельные домики, шумные рынки и побережье, где даже планы можно
+            отменить.
+          </p>
+          <a class="text-link" href="contact.html"
+            ><span data-i18n="dest.details">Узнать подробности</span>
+            <span>↗</span></a
+          >
+        </article>
+        <article
+          class="destination-listing reveal"
+          id="japan"
+          data-category="asia"
+        >
+          <a class="listing-image" href="contact.html"
+            ><img
+              src="https://images.pexels.com/photos/35072449/pexels-photo-35072449.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              alt="Улица Токио с яркими вывесками"
+              loading="lazy"
+            /><span class="listing-number">05</span></a
+          >
+          <div class="listing-meta">
+            <span data-i18n="dest.japanRegion">Япония · Азия</span
+            ><span data-i18n="dest.japanDuration">Цена по запросу</span>
+          </div>
+          <h2 data-i18n="dest.japanTitle">Япония: Токио и традиции</h2>
+          <p data-i18n="dest.japanDesc">
+            Неоновые кварталы Токио, старинные храмы и японская кухня — в одном
+            насыщенном путешествии.
+          </p>
+          <a class="text-link" href="contact.html"
+            ><span data-i18n="dest.details">Узнать подробности</span>
+            <span>↗</span></a
+          >
+        </article>
+        <article
+          class="destination-listing reveal"
+          id="mauritius"
+          data-category="africa"
+        >
+          <a class="listing-image" href="contact.html"
+            ><img
+              src="https://images.pexels.com/photos/36731927/pexels-photo-36731927.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              alt="Горы и бирюзовая лагуна Маврикия"
+              loading="lazy"
+            /><span class="listing-number">06</span></a
+          >
+          <div class="listing-meta">
+            <span data-i18n="dest.mauritiusRegion"
+              >Маврикий · Индийский океан</span
+            ><span data-i18n="dest.mauritiusDuration">Цена по запросу</span>
+          </div>
+          <h2 data-i18n="dest.mauritiusTitle">Маврикий: лагуны и горы</h2>
+          <p data-i18n="dest.mauritiusDesc">
+            Бирюзовые лагуны, зелёные горы и тихие пляжи тропического острова.
+          </p>
+          <a class="text-link" href="contact.html"
+            ><span data-i18n="dest.details">Узнать подробности</span>
+            <span>↗</span></a
+          >
+        </article>
+        <article
+          class="destination-listing reveal"
+          id="china"
+          data-category="asia"
+        >
+          <a class="listing-image" href="contact.html"
+            ><img
+              src="https://images.pexels.com/photos/19872/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1600"
+              alt="Великая Китайская стена среди гор"
+              loading="lazy"
+            /><span class="listing-number">07</span></a
+          >
+          <div class="listing-meta">
+            <span data-i18n="dest.chinaRegion">Китай · Азия</span
+            ><span data-i18n="dest.chinaDuration">Цена по запросу</span>
+          </div>
+          <h2 data-i18n="dest.chinaTitle">Китай: Великая Китайская стена</h2>
+          <p data-i18n="dest.chinaDesc">
+            Великая Китайская стена, древние города и знакомство с многовековой
+            культурой страны.
+          </p>
+          <a class="text-link" href="contact.html"
+            ><span data-i18n="dest.details">Узнать подробности</span>
+            <span>↗</span></a
+          >
+        </article>
+        <article
+          class="destination-listing reveal"
+          id="vietnam"
+          data-category="asia"
+        >
+          <a class="listing-image" href="contact.html"
+            ><img
+              src="https://images.pexels.com/photos/4078001/pexels-photo-4078001.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              alt="Дома у зелёных гор во Вьетнаме"
+              loading="lazy"
+            /><span class="listing-number">08</span></a
+          >
+          <div class="listing-meta">
+            <span data-i18n="dest.vietnamRegion">Вьетнам · Азия</span
+            ><span data-i18n="dest.vietnamDuration">Цена по запросу</span>
+          </div>
+          <h2 data-i18n="dest.vietnamTitle">
+            Вьетнам: бухты и старые кварталы
+          </h2>
+          <p data-i18n="dest.vietnamDesc">
+            Изумрудные пейзажи, оживлённые рынки и старинные улочки Вьетнама.
+          </p>
+          <a class="text-link" href="contact.html"
+            ><span data-i18n="dest.details">Узнать подробности</span>
+            <span>↗</span></a
+          >
+        </article>
+        <article
+          class="destination-listing reveal"
+          id="egypt"
+          data-category="africa"
+        >
+          <a class="listing-image" href="contact.html"
+            ><img
+              src="https://images.pexels.com/photos/31133003/pexels-photo-31133003.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              alt="Пирамиды Гизы в Египте"
+              loading="lazy"
+            /><span class="listing-number">09</span></a
+          >
+          <div class="listing-meta">
+            <span data-i18n="dest.egyptRegion">Египет · Африка</span
+            ><span data-i18n="dest.egyptDuration">Цена по запросу</span>
+          </div>
+          <h2 data-i18n="dest.egyptTitle">
+            Египет: древний мир и Красное море
+          </h2>
+          <p data-i18n="dest.egyptDesc">
+            Пирамиды и памятники древности, а после — отдых у Красного моря.
+          </p>
+          <a class="text-link" href="contact.html"
+            ><span data-i18n="dest.details">Узнать подробности</span>
+            <span>↗</span></a
+          >
+        </article>
+        <article
+          class="destination-listing reveal"
+          id="dubai"
+          data-category="africa"
+        >
+          <a class="listing-image" href="contact.html"
+            ><img
+              src="https://images.pexels.com/photos/8319462/pexels-photo-8319462.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              alt="Небоскрёбы Дубая у воды"
+              loading="lazy"
+            /><span class="listing-number">10</span></a
+          >
+          <div class="listing-meta">
+            <span data-i18n="dest.dubaiRegion">Дубай · Ближний Восток</span
+            ><span data-i18n="dest.dubaiDuration">Цена по запросу</span>
+          </div>
+          <h2 data-i18n="dest.dubaiTitle">Дубай: город будущего и пустыня</h2>
+          <p data-i18n="dest.dubaiDesc">
+            Современные небоскрёбы, набережные и поездка в пустыню на закате.
+          </p>
+          <a class="text-link" href="contact.html"
+            ><span data-i18n="dest.details">Узнать подробности</span>
+            <span>↗</span></a
+          >
+        </article>
+      </section>
+      <section class="closing-cta page-container reveal">
+        <span class="eyebrow" data-i18n="dest.ctaLabel"
+          >Маршрут не найден?</span
+        >
+        <h2 data-i18n="dest.ctaTitle">Составим ваш.</h2>
+        <a class="button button-dark" href="contact.html"
+          ><span data-i18n="dest.ctaButton">Обсудить маршрут</span
+          ><span>↗</span></a
+        >
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="index.html"
+        ><img
+          class="brand-logo"
+          src="assets/moxito-logo.png"
+          alt="Moxito Tour" /></a
+      ><span class="footer-copy" data-i18n="footer.copy"
+        >Путешествия, которые остаются с вами. Ташкент, 2026.</span
+      >
+      <nav class="footer-links">
+        <a href="destinations.html" data-i18n="nav.destinations">Направления</a
+        ><a href="reviews.html" data-i18n="nav.reviews">Отзывы</a
+        ><a href="contact.html" data-i18n="nav.contact">Контакты</a>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

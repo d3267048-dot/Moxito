@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f0f7e9" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Отзывы — Moxito Tour</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Moxito Tour — главная"
+        ><img
+          class="brand-logo"
+          src="assets/moxito-logo.png"
+          alt="Moxito Tour" /></a
+      ><button
+        class="menu-toggle"
+        type="button"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
+      <nav
+        class="main-nav"
+        aria-label="Основная навигация"
+        data-i18n-aria="nav.aria"
+      >
+        <a href="index.html" data-i18n="nav.home">Главная</a
+        ><a href="destinations.html" data-i18n="nav.destinations">Направления</a
+        ><a href="about.html" data-i18n="nav.about">О нас</a
+        ><a class="active" href="reviews.html" data-i18n="nav.reviews">Отзывы</a
+        ><a href="contact.html" data-i18n="nav.contact">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <label class="language-picker"
+          ><span class="sr-only" data-i18n="language.label">Язык</span
+          ><select class="language-select" aria-label="Язык">
+            <option value="ru">RU</option>
+            <option value="uz">UZ</option>
+            <option value="en">EN</option>
+          </select></label
+        ><a class="header-cta" href="contact.html" data-i18n="nav.cta"
+          >Обсудить поездку <span>↗</span></a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="inner-hero page-container">
+        <div class="breadcrumbs">
+          <a href="index.html" data-i18n="nav.home">Главная</a><span>/</span
+          ><span data-i18n="nav.reviews">Отзывы</span>
+        </div>
+        <div class="inner-hero-row">
+          <div>
+            <span class="eyebrow" data-i18n="reviews.eyebrow"
+              >Истории, которые мы везём домой</span
+            >
+            <h1 data-i18n="reviews.title">Их словами.<br />От всего сердца.</h1>
+          </div>
+          <p class="inner-lead" data-i18n="reviews.lead">
+            Самая приятная часть нашей работы — узнавать, что поездка стала для
+            кого-то важной историей.
+          </p>
+        </div>
+        <div class="review-summary">
+          <strong>4.9<span>/5</span></strong
+          ><span class="summary-stars" aria-label="5 звёзд">★★★★★</span
+          ><span data-i18n="reviews.summary"
+            >Средняя оценка наших путешественников</span
+          >
+        </div>
+      </section>
+      <section class="reviews-grid page-container">
+        <article class="review-card reveal">
+          <div class="review-card-top">
+            <span class="review-initials">НК</span
+            ><span class="review-stars">★★★★★</span>
+          </div>
+          <blockquote data-i18n="reviews.quoteOne">
+            «Я ожидала красивых зданий и хорошей еды. А получила ощущение, будто
+            приехала к старым друзьям. Мальдивы останутся со мной надолго.»
+          </blockquote>
+          <div class="review-card-footer">
+            <span
+              ><strong data-i18n="reviews.authorOne">Наталья и Кирилл</strong
+              ><small data-i18n="reviews.tripOne"
+                >Узбекистан · май 2025</small
+              ></span
+            ><span class="review-mark">01</span>
+          </div>
+        </article>
+        <article class="review-card review-card-dark reveal">
+          <div class="review-card-top">
+            <span class="review-initials">АШ</span
+            ><span class="review-stars">★★★★★</span>
+          </div>
+          <blockquote data-i18n="reviews.quoteTwo">
+            «Лучшее решение — оставить один день без плана. Мы просто гуляли по
+            острову, купались в тёплом море и ни разу не смотрели на часы.»
+          </blockquote>
+          <div class="review-card-footer">
+            <span
+              ><strong data-i18n="reviews.authorTwo">Алина и Шерзод</strong
+              ><small data-i18n="reviews.tripTwo"
+                >Таиланд · июнь 2025</small
+              ></span
+            ><span class="review-mark">02</span>
+          </div>
+        </article>
+        <article class="review-card reveal">
+          <div class="review-card-top">
+            <span class="review-initials">МИ</span
+            ><span class="review-stars">★★★★★</span>
+          </div>
+          <blockquote data-i18n="reviews.quoteThree">
+            «Мы путешествовали с дочерью, и команда продумала всё до мелочей.
+            Она до сих пор просит рассказать, как переплывали Босфор на пароме.»
+          </blockquote>
+          <div class="review-card-footer">
+            <span
+              ><strong data-i18n="reviews.authorThree">Малика и Илья</strong
+              ><small data-i18n="reviews.tripThree"
+                >Стамбул · сентябрь 2025</small
+              ></span
+            ><span class="review-mark">03</span>
+          </div>
+        </article>
+        <article class="review-card reveal">
+          <div class="review-card-top">
+            <span class="review-initials">ФР</span
+            ><span class="review-stars">★★★★★</span>
+          </div>
+          <blockquote data-i18n="reviews.quoteFour">
+            «Маленькая группа, никакого бега за сувенирами, гид, которому
+            хотелось задавать ещё больше вопросов. Увидеть страну по-настоящему
+            получилось.»
+          </blockquote>
+          <div class="review-card-footer">
+            <span
+              ><strong data-i18n="reviews.authorFour">Фаррух и Рано</strong
+              ><small data-i18n="reviews.tripFour"
+                >Таиланд · октябрь 2025</small
+              ></span
+            ><span class="review-mark">04</span>
+          </div>
+        </article>
+        <article class="review-card review-card-accent reveal">
+          <div class="review-card-top">
+            <span class="review-initials">ЗМ</span
+            ><span class="review-stars">★★★★★</span>
+          </div>
+          <blockquote data-i18n="reviews.quoteFive">
+            «Мама впервые полетела за границу в 64 года. Теперь у неё целый
+            альбом фотографий и планы на Италию.»
+          </blockquote>
+          <div class="review-card-footer">
+            <span
+              ><strong data-i18n="reviews.authorFive">Замира и мама</strong
+              ><small data-i18n="reviews.tripFive"
+                >Узбекистан · апрель 2026</small
+              ></span
+            ><span class="review-mark">05</span>
+          </div>
+        </article>
+        <article class="review-invitation reveal">
+          <span class="eyebrow" data-i18n="reviews.inviteLabel">А ваша?</span>
+          <h2 data-i18n="reviews.inviteTitle">
+            Следующая<br />история может<br />быть вашей.
+          </h2>
+          <a class="text-link" href="contact.html"
+            ><span data-i18n="reviews.inviteButton">Выбрать путешествие</span>
+            <span>↗</span></a
+          >
+        </article>
+      </section>
+      <section class="closing-cta page-container reveal">
+        <span class="eyebrow" data-i18n="reviews.ctaLabel"
+          >Здесь может быть и ваша история</span
+        >
+        <h2 data-i18n="reviews.ctaTitle">Поехали?</h2>
+        <a class="button button-dark" href="destinations.html"
+          ><span data-i18n="reviews.ctaButton">Найти путешествие</span
+          ><span>↗</span></a
+        >
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="index.html"
+        ><img
+          class="brand-logo"
+          src="assets/moxito-logo.png"
+          alt="Moxito Tour" /></a
+      ><span class="footer-copy" data-i18n="footer.copy"
+        >Путешествия, которые остаются с вами. Ташкент, 2026.</span
+      >
+      <nav class="footer-links">
+        <a href="destinations.html" data-i18n="nav.destinations">Направления</a
+        ><a href="reviews.html" data-i18n="nav.reviews">Отзывы</a
+        ><a href="contact.html" data-i18n="nav.contact">Контакты</a>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
